@@ -6,6 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "test": "jest --testPathPattern=./src/",
     "coverage": "jest --testPathPattern=./src/ --coverage",
@@ -49,7 +51,8 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "add": "^2.0.6",
-    "core-js": "3"
+    "core-js": "3",
+    "gh-pages": "^5.0.0"
   },
   "repository": {
     "type": "git",
