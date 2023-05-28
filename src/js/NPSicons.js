@@ -9,7 +9,6 @@ import unionPay from '../assets/UnionPay_logo.png';
 import maestro from '../assets/maestro_curved.png';
 import visaElectron from '../assets/visa_electron_curved.png';
 
-
 export default class NPSicons {
   constructor() {
     this.paymentSystemList = {
